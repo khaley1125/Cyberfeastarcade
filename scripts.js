@@ -4,35 +4,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('nav');
     const header = document.querySelector('header');
 
-    // Toggle mobile menu with animation
-    const toggleMenu = () => {
-        menuToggle.classList.toggle('active');
-        nav.classList.toggle('active');
-        header.classList.toggle('menu-open');
+    if (menuToggle && nav && header) {
+        // Toggle mobile menu with animation
+        const toggleMenu = () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+            header.classList.toggle('menu-open');
 
-        if (nav.classList.contains('active')) {
-            // Focus the first focusable element in the menu
-            const firstLink = nav.querySelector('a');
-            if(firstLink){
-                firstLink.focus();
+            if (nav.classList.contains('active')) {
+                // Focus the first focusable element in the menu
+                const firstLink = nav.querySelector('a');
+                if (firstLink) {
+                    firstLink.focus();
+                }
+            } else {
+                // Return focus to the menu toggle button
+                menuToggle.focus();
             }
+        };
 
-        } else {
-            // Return focus to the menu toggle button.
-            menuToggle.focus();
-        }
-    };
+        // Toggle menu on button click
+        menuToggle.addEventListener('click', toggleMenu);
 
-    menuToggle.addEventListener('click', toggleMenu);
+        // Close menu when clicking outside or on a link
+        document.addEventListener('click', (e) => {
+            if (nav.classList.contains('active') &&
+                !e.target.closest('nav') &&
+                !e.target.closest('.menu-toggle')) {
+                toggleMenu();
+            }
+        });
 
-    // Close menu when clicking outside or on a link
-    document.addEventListener('click', (e) => {
-        if (nav.classList.contains('active') &&
-            !e.target.closest('nav') &&
-            !e.target.closest('.menu-toggle')) {
-            toggleMenu();
-        }
-    });
+        // Handle ESC key to close menu
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    }
 
     // Smooth scroll functionality with header offset
     const smoothScroll = (e) => {
@@ -61,24 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', smoothScroll);
 
     // Add aria attributes for accessibility
-    nav.querySelectorAll('a').forEach(link => {
-        link.setAttribute('aria-current',
-            link.href === window.location.href ? 'page' : 'false');
-    });
-
-    // Handle ESC key to close menu
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && nav.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
-});
-// Hamburger Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    menuToggle.classList.toggle('active');
-});
+    if (nav) {
+        nav.querySelectorAll('a').forEach(link => {
+            link.setAttribute('aria-current',
+                link.href === window.location.href ? 'page' : 'false');
+        });
+    }
 });
