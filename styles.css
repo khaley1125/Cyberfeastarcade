@@ -508,3 +508,9 @@ header h1 {
         display: flex;
     }
 }
+#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
