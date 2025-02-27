@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TL95KEW8LY');
+        </script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Watch the latest videos from CyberFeastArcade covering gaming, tech, and more.");
+        <title></title>
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Video Grid Styles */
+            .video-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 2rem;
+            }
+    
+            .video-card {
+                background: #1a1a1a;
+                border-radius: 8px;
+                padding: 1rem;
+                transition: transform 0.3s ease;
+            }
+    
+            .video-card:hover {
+                transform: translateY(-5px);
+            }
+    
+            .video-wrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                border-radius: 4px;
+            }
+    
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+    
+            .video-info {
+                padding: 1rem 0;
+            }
+    
+            .video-title {
+                color: #4CAF50;
+                margin: 0.5rem 0;
+                font-size: 1.2rem;
+            }
+    
+            .video-meta {
+                color: #888;
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+    
+            .video-description {
+                color: #ccc;
+                line-height: 1.4;
+            }
+    
+        </style>
+    </head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Mobile menu">
+            <span class="hamburger"></span>
+        </button>
+        
+        <h1 class="site-title">CyberFeastArcade</h1>
+        
+        <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
+           class="youtube-subscribe" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Subscribe to our YouTube channel">
+            <i class="fab fa-youtube"></i> Subscribe
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main class="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p><em>Effective Date: [Insert Date]</em></p>
+
+        <section>
+            <h3>1. Information We Collect</h3>
+            <p>We may collect the following types of information:</p>
+            <ul>
+                <li>Email addresses when you subscribe to our newsletter</li>
+                <li>Usage data through cookies and analytics tools</li>
+                <li>Information you provide when contacting us (name, email, message)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>2. How We Use Your Information</h3>
+            <ul>
+                <li>To improve our website and content</li>
+                <li>To send periodic emails (you can unsubscribe at any time)</li>
+                <li>To respond to inquiries and provide support</li>
+                <li>To analyze website traffic using Google Analytics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>3. Third-Party Services</h3>
+            <p>We use these third-party services:</p>
+            <ul>
+                <li>YouTube (embedded videos) - <a href="https://policies.google.com/privacy" target="_blank">View their privacy policy</a></li>
+                <li>Google Analytics - <a href="https://policies.google.com/privacy" target="_blank">View their privacy policy</a></li>
+                <li>[Add any email service provider you use like Mailchimp]</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>4. Cookies</h3>
+            <p>We use cookies to:</p>
+            <ul>
+                <li>Remember user preferences</li>
+                <li>Analyze website traffic</li>
+                <li>Improve user experience</li>
+            </ul>
+            <p>You can disable cookies in your browser settings.</p>
+        </section>
+
+        <section>
+            <h3>5. Your Rights</h3>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request correction or deletion</li>
+                <li>Withdraw consent</li>
+                <li>Lodge a complaint with authorities</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>6. Data Security</h3>
+            <p>We implement security measures including:</p>
+            <ul>
+                <li>SSL encryption</li>
+                <li>Limited data access</li>
+                <li>Regular system updates</li>
+            </ul>
+            <p>However, no method of transmission over the internet is 100% secure.</p>
+        </section>
+
+        <section>
+            <h3>7. Policy Changes</h3>
+            <p>We may update this policy periodically. Changes will be posted on this page.</p>
+        </section>
+
+        <section>
+            <h3>8. Contact Us</h3>
+            <p>For privacy-related inquiries: <br>
+            Email: [your-email@domain.com]</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-grid">
+            <a href="https://www.youtube.com/@CyberFeastArcade" class="social-link" aria-label="Our YouTube channel">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            <a href="https://x.com/CyberFeastArc" class="social-link" aria-label="Our X/Twitter Profile">
+                <i class="fab fa-x-twitter"></i>
+                <span>X/Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/cyberfeastarcade/" class="social-link" aria-label="Our Instagram Profile">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <div class="legal-links">
+            <a href="privacy.html">Privacy Matrix</a>
+            <a href="terms.html">Terms Protocol</a>
+            <a href="dmca.html">DMCA Firewall</a>
+        </div>
+        <p class="copyright">© <span id="current-year"></span> CyberFeastArcade</p>
+    </footer>
+    <script>
+        // Auto-update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

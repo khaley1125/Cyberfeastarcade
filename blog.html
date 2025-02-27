@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest blog posts from CyberFeastArcade, covering gaming, tech, and more.">
+    <title>Blog - CyberFeastArcade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Mobile menu">
+            <span class="hamburger"></span>
+        </button>
+        
+        <h1 class="site-title">CyberFeastArcade</h1>
+        
+        <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
+           class="youtube-subscribe" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Subscribe to our YouTube channel">
+            <i class="fab fa-youtube"></i> Subscribe
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog">
+            <h2>Latest Blog Posts</h2>
+            <p class="blog-intro">Stay updated with the latest insights, tips, and trends in gaming and tech from CyberFeastArcade.</p>
+            
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <h3 class="blog-title">Welcome to CFA! Let’s Build, Create, and Geek Out Together 🤖✨</h3>
+                    <p class="blog-excerpt">Hey there, future co-conspirators of creativity! 👋
+
+                        I’m Kent, and this corner of the internet is where we’ll turn tech jargon into magic, pixels into possibilities, and AI hype into actual solutions. Whether you’re here to build a website, automate your life, or just nerd out about the future, welcome home.</p>
+                    <a href="blog-post-1.html" class="btn btn-read-more">Read More</a>
+                </article>
+            
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <h3 class="blog-title">Growth UnlockedEmpowering AI Protection: Edera - A Revolution in Cloud SecurityGrowth Unlocked</h3>
+                    <p class="blog-excerpt">In a rapidly evolving digital landscape, security remains a cornerstone of successful cloud computing infrastructure. Enter Edera, a pioneering startup founded by a team of innovative women in tech, determined to redefine AI protection through groundbreaking security solutions. After recently securing $15 million in Series A funding, Edera is poised to transform cloud and AI infrastructure with its cutting-edge workload isolation technology.</p>
+                    <a href="blog-post-2.html" class="btn btn-read-more">Read More</a>
+                </article>
+            
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <h3 class="blog-title">Implications of AI in government</h3>
+                    <p class="blog-excerpt">The integration of artificial intelligence (AI) in government operations has the potential to significantly impact the workforce. As AI technology continues to advance, automation of tasks previously performed by humans has become more prevalent. While this can lead to increased efficiency and productivity, it also raises concerns about the implications for employment rates within the government sector.</p>
+                    <a href="blog-post-3.html" class="btn btn-read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-grid">
+            <a href="https://www.youtube.com/@CyberFeastArcade" class="social-link" aria-label="Our YouTube channel">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            <a href="https://x.com/CyberFeastArc" class="social-link" aria-label="Our X/Twitter Profile">
+                <i class="fab fa-x-twitter"></i>
+                <span>X/Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/cyberfeastarcade/" class="social-link" aria-label="Our Instagram Profile">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+        
+        <div class="legal-links">
+            <a href="privacy.html">Privacy Matrix</a>
+            <a href="terms.html">Terms Protocol</a>
+            <a href="dmca.html">DMCA Firewall</a>
+        </div>
+        
+        <p class="copyright">© <span id="current-year"></span> CyberFeastArcade. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

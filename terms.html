@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TL95KEW8LY');
+        </script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Watch the latest videos from CyberFeastArcade covering gaming, tech, and more.");
+        <title></title>
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Video Grid Styles */
+            .video-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 2rem;
+            }
+    
+            .video-card {
+                background: #1a1a1a;
+                border-radius: 8px;
+                padding: 1rem;
+                transition: transform 0.3s ease;
+            }
+    
+            .video-card:hover {
+                transform: translateY(-5px);
+            }
+    
+            .video-wrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                border-radius: 4px;
+            }
+    
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+    
+            .video-info {
+                padding: 1rem 0;
+            }
+    
+            .video-title {
+                color: #4CAF50;
+                margin: 0.5rem 0;
+                font-size: 1.2rem;
+            }
+    
+            .video-meta {
+                color: #888;
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+    
+            .video-description {
+                color: #ccc;
+                line-height: 1.4;
+            }
+    
+        </style>
+    </head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Mobile menu">
+            <span class="hamburger"></span>
+        </button>
+        
+        <h1 class="site-title">CyberFeastArcade</h1>
+        
+        <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
+           class="youtube-subscribe" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Subscribe to our YouTube channel">
+            <i class="fab fa-youtube"></i> Subscribe
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main class="terms-service">
+        <h2>Terms of Service</h2>
+        <p><em>Last Updated: [Insert Date]</em></p>
+
+        <section>
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing CyberFeastArcade ("the Site"), you agree to be bound by these Terms of Service. If you disagree with any part, you may not access the Site.</p>
+        </section>
+
+        <section>
+            <h3>2. User Responsibilities</h3>
+            <ul>
+                <li>You must be at least 13 years old to use this Site</li>
+                <li>Do not engage in unauthorized scraping/data collection</li>
+                <li>Do not attempt to disrupt Site operations</li>
+                <li>You are responsible for maintaining account security</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>3. Intellectual Property</h3>
+            <ul>
+                <li>All content (videos, text, graphics) is owned by CyberFeastArcade unless otherwise stated</li>
+                <li>You may share content with proper attribution</li>
+                <li>Commercial use requires written permission</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>4. Third-Party Content</h3>
+            <p>We may use/exhibit content from:</p>
+            <ul>
+                <li>YouTube (embedded videos) - <a href="https://www.youtube.com/t/terms" target="_blank">View YouTube Terms</a></li>
+                <li>[Add other services like Patreon/Ko-fi if applicable]</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>5. Disclaimer of Warranties</h3>
+            <p>The Site is provided "as is" without warranties of any kind. We do not guarantee:</p>
+            <ul>
+                <li>Uninterrupted or error-free service</li>
+                <li>Accuracy of content</li>
+                <li>Results from using any advice/tutorials</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>6. Limitation of Liability</h3>
+            <p>CyberFeastArcade shall not be liable for:</p>
+            <ul>
+                <li>Any direct/indirect damages from Site use</li>
+                <li>Loss of data or profits</li>
+                <li>Third-party content actions</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>7. Termination</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Restrict access to any user</li>
+                <li>Remove/delete content</li>
+                <li>Discontinue the Site at any time</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>8. Governing Law</h3>
+            <p>These Terms are governed by the laws of [Your Country/State], without regard to conflict of law principles.</p>
+        </section>
+
+        <section>
+            <h3>9. Changes to Terms</h3>
+            <p>We may revise these Terms at any time. Continued use after changes constitutes acceptance.</p>
+        </section>
+
+        <section>
+            <h3>10. Contact Information</h3>
+            <p>For questions about these Terms: <br>
+            Email: [your-email@domain.com]</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-grid">
+            <a href="https://www.youtube.com/@CyberFeastArcade" class="social-link" aria-label="Our YouTube channel">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            <a href="https://x.com/CyberFeastArc" class="social-link" aria-label="Our X/Twitter Profile">
+                <i class="fab fa-x-twitter"></i>
+                <span>X/Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/cyberfeastarcade/" class="social-link" aria-label="Our Instagram Profile">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <div class="legal-links">
+            <a href="privacy.html">Privacy Matrix</a>
+            <a href="terms.html">Terms Protocol</a>
+            <a href="dmca.html">DMCA Firewall</a>
+        </div>
+        <p class="copyright">© <span id="current-year"></span> CyberFeastArcade</p>
+    </footer>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
