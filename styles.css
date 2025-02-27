@@ -518,3 +518,6 @@ header h1 {
     width: 120px; /* Adjust size as needed */
     height: auto; /* Keeps the aspect ratio */
 }
+a {
+    text-decoration: none;
+}
