@@ -85,31 +85,44 @@
     </head>
 <body>
     <header>
+    <div class="header-container">
+        <!-- Mobile Menu Toggle -->
         <button class="menu-toggle" aria-label="Mobile menu">
             <span class="hamburger"></span>
         </button>
-        
-        <h1 class="site-title">CyberFeastArcade</h1>
-        
-        <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
-           class="youtube-subscribe" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           aria-label="Subscribe to our YouTube channel">
-            <i class="fab fa-youtube"></i> Subscribe
-        </a>
-        
-        <nav>
+
+        <!-- Logo & Site Title -->
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="profile.jpg" alt="CyberFeastArcade Logo">
+                <h1 class="site-title">CyberFeastArcade</h1>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="videos.html" class="nav-link">Videos</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
             </ul>
         </nav>
-    </header>
+
+        <!-- YouTube Subscribe Button -->
+        <div class="header-actions">
+            <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
+               class="youtube-subscribe" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Subscribe to our YouTube channel">
+                <i class="fab fa-youtube"></i> Subscribe
+            </a>
+        </div>
+    </div>
+</header>
     
 
     <main class="privacy-policy">
