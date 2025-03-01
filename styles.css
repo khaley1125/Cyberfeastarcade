@@ -1,6 +1,7 @@
 :root {
     --primary-red: #ff0000;
     --text-primary: #ffffff;
+    --hacker-green: #00ff00;
     --background-dark: #121212;
     --background-light: #ffffff;
     --border-radius: 8px;
@@ -77,13 +78,14 @@ header {
 }
 
 .nav-link {
-    color: var(--text-primary);
+    color: var(--hacker-green);
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    text-shadow: 0 0 8px var(--hacker-green);
 }
 
 .nav-link:hover,
@@ -163,8 +165,8 @@ main {
 
 .hero-content h1 {
     font-size: 3rem;
-    color: #00ff00;
-    text-shadow: 0 0 15px #00ff00;
+    color: var(--hacker-green);
+    text-shadow: 0 0 15px var(--hacker-green);
     margin-bottom: 1rem;
 }
 
@@ -212,14 +214,16 @@ footer {
 }
 
 footer a {
-    color: var(--text-primary);
+    color: var(--hacker-green);
     text-decoration: none;
     transition: color 0.3s ease;
+    text-shadow: 0 0 8px var(--hacker-green);
 }
 
 footer a:hover {
     color: var(--primary-red);
     text-decoration: underline;
+    text-shadow: 0 0 12px var(--primary-red);
 }
 
 /* Ensure Navigation Shows on Larger Screens */
