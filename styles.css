@@ -358,3 +358,7 @@ body.light { background: #FFF; color: #0A0A0A; }
     font-size: 1.5rem;
     z-index: 1000;
 }
+a.nav-link:link, 
+a.nav-link:visited {
+  color: #fff !important;
+}
