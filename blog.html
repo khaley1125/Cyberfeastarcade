@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TL95KEW8LY');
-        </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TL95KEW8LY');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the latest blog posts from CyberFeastArcade, covering gaming, tech, and more.">
-    <h1><a href="index.html" class="title-link">CyberFeastArcade</a></h1>
+    <meta name="description" content="Latest articles from CyberFeastArcade on gaming, tech, and AI">
+    <title>CyberFeastArcade Blog</title>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .blog-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-title {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-excerpt {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .btn-read-more {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <button class="menu-toggle" aria-label="Mobile menu">
             <span class="hamburger"></span>
         </button>
         
-        <h1 class="site-title">CyberFeastArcade</h1>
-        
+        <a href="index.html" class="logo">
+            <img src="profile.jpg" alt="CyberFeastArcade Logo">
+            <h1 class="site-title">CyberFeastArcade</h1>
+        </a>
+
         <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
            class="youtube-subscribe" 
            target="_blank" 
@@ -30,7 +90,7 @@
            aria-label="Subscribe to our YouTube channel">
             <i class="fab fa-youtube"></i> Subscribe
         </a>
-        
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -43,36 +103,44 @@
         </nav>
     </header>
 
-    <main>
-        <section id="blog">
-            <h2>Latest Blog Posts</h2>
-            <p class="blog-intro">Stay updated with the latest insights, tips, and trends in gaming and tech from CyberFeastArcade.</p>
-            
-            <div class="blog-posts">
-                <!-- Blog Post 1 -->
-                <article class="blog-card">
-                    <h3 class="blog-title">Welcome to CFA! Let’s Build, Create, and Geek Out Together 🤖✨</h3>
-                    <p class="blog-excerpt">Hey there, future co-conspirators of creativity! 👋
+    <main class="blog-container">
+        <h1>Latest Posts</h1>
+        <p class="blog-intro">Stay updated with cutting-edge tech insights and gaming trends</p>
+        
+        <div class="blog-posts">
+            <article class="blog-card">
+                <h2 class="blog-title">Welcome to CFA! Let's Build & Create Together</h2>
+                <div class="blog-meta">
+                    <time datetime="2025-02-13">February 13, 2025</time> | Kent Haley
+                </div>
+                <p class="blog-excerpt">
+                    Turn tech jargon into magic and AI hype into practical solutions. Whether you're here to build websites, automate workflows, or geek out about the future - welcome home.
+                </p>
+                <a href="blog-post-1.html" class="btn-read-more">Read More</a>
+            </article>
 
-                        I’m Kent, and this corner of the internet is where we’ll turn tech jargon into magic, pixels into possibilities, and AI hype into actual solutions. Whether you’re here to build a website, automate your life, or just nerd out about the future, welcome home.</p>
-                    <a href="blog-post-1.html" class="btn btn-read-more">Read More</a>
-                </article>
-            
-                <!-- Blog Post 2 -->
-                <article class="blog-card">
-                    <h3 class="blog-title">Growth UnlockedEmpowering AI Protection: Edera - A Revolution in Cloud SecurityGrowth Unlocked</h3>
-                    <p class="blog-excerpt">In a rapidly evolving digital landscape, security remains a cornerstone of successful cloud computing infrastructure. Enter Edera, a pioneering startup founded by a team of innovative women in tech, determined to redefine AI protection through groundbreaking security solutions. After recently securing $15 million in Series A funding, Edera is poised to transform cloud and AI infrastructure with its cutting-edge workload isolation technology.</p>
-                    <a href="blog-post-2.html" class="btn btn-read-more">Read More</a>
-                </article>
-            
-                <!-- Blog Post 3 -->
-                <article class="blog-card">
-                    <h3 class="blog-title">Implications of AI in government</h3>
-                    <p class="blog-excerpt">The integration of artificial intelligence (AI) in government operations has the potential to significantly impact the workforce. As AI technology continues to advance, automation of tasks previously performed by humans has become more prevalent. While this can lead to increased efficiency and productivity, it also raises concerns about the implications for employment rates within the government sector.</p>
-                    <a href="blog-post-3.html" class="btn btn-read-more">Read More</a>
-                </article>
-            </div>
-        </section>
+            <article class="blog-card">
+                <h2 class="blog-title">Edera: AI-Powered Cloud Security Revolution</h2>
+                <div class="blog-meta">
+                    <time datetime="2025-02-20">February 20, 2025</time> | Kent Haley
+                </div>
+                <p class="blog-excerpt">
+                    Explore how Edera's workload isolation technology is transforming cloud security for AI infrastructure, backed by $15M in Series A funding.
+                </p>
+                <a href="blog-post-2.html" class="btn-read-more">Read More</a>
+            </article>
+
+            <article class="blog-card">
+                <h2 class="blog-title">AI in Government: Workforce Implications</h2>
+                <div class="blog-meta">
+                    <time datetime="2025-02-25">February 25, 2025</time> | Kent Haley
+                </div>
+                <p class="blog-excerpt">
+                    Analyzing the impact of AI integration on public sector employment and the urgent need for reskilling programs in government organizations.
+                </p>
+                <a href="blog-post-3.html" class="btn-read-more">Read More</a>
+            </article>
+        </div>
     </main>
 
     <footer>
@@ -97,12 +165,12 @@
             <a href="dmca.html">DMCA Firewall</a>
         </div>
         
-        <p class="copyright">© <span id="current-year"></span> CyberFeastArcade. All rights reserved.</p>
+        <p class="copyright">© <span id="current-year"></span> CyberFeastArcade</p>
     </footer>
 
-    <script src="scripts.js" defer></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
