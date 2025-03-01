@@ -1,147 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TL95KEW8LY');
-        </script>
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Watch the latest videos from CyberFeastArcade covering gaming, tech, and more.");
-        <h1><a href="index.html" class="title-link">CyberFeastArcade</a></h1>
-        
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <style>
-            /* Updated Video Grid Styles */
-            .video-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-                gap: 2rem;
-                padding: 2rem;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TL95KEW8LY');
+    </script>
     
-            .review-post {
-                background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-                border-radius: 15px;
-                padding: 2rem;
-                margin: 2rem auto;
-                max-width: 1200px;
-                box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In-depth tech reviews from CyberFeastArcade">
+    <title>Raspberry Pi 5 Review - CyberFeastArcade</title>
     
-            .review-header {
-                text-align: center;
-                margin-bottom: 2rem;
-            }
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     
-            .product-rating {
-                color: #FFD700;
-                font-size: 1.5rem;
-                margin: 1rem 0;
-            }
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-            .specs-table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 2rem 0;
-                background: #2a2a2a;
-                border-radius: 8px;
-                overflow: hidden;
-            }
-    
-            .specs-table td {
-                padding: 1rem;
-                border-bottom: 1px solid #3a3a3a;
-            }
-    
-            .specs-table tr:last-child td {
-                border-bottom: none;
-            }
-    
+    <style>
+        .review-post {
+            background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .product-rating {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .pros-list {
+            background: rgba(76, 175, 80, 0.1);
+            border: 2px solid #4CAF50;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .cons-list {
+            background: rgba(244, 67, 54, 0.1);
+            border: 2px solid #F44336;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .verdict {
+            background: rgba(33, 150, 243, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 2px solid #2196F3;
+            margin: 2rem 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 2rem auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
             .pros-cons {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-                margin: 2rem 0;
+                grid-template-columns: 1fr;
             }
-    
-            .pros-list, .cons-list {
-                padding: 1.5rem;
-                border-radius: 8px;
-            }
-    
-            .pros-list {
-                background: rgba(76, 175, 80, 0.1);
-                border: 2px solid #4CAF50;
-            }
-    
-            .cons-list {
-                background: rgba(244, 67, 54, 0.1);
-                border: 2px solid #F44336;
-            }
-    
-            .verdict {
-                background: rgba(33, 150, 243, 0.1);
-                padding: 2rem;
-                border-radius: 8px;
-                border: 2px solid #2196F3;
-                margin: 2rem 0;
-            }
-    
-            .buy-button {
-                display: inline-block;
-                background: #4CAF50;
-                color: white;
-                padding: 1rem 2rem;
-                border-radius: 50px;
-                text-decoration: none;
-                font-weight: bold;
-                transition: transform 0.3s ease;
-                margin: 1rem 0;
-            }
-    
-            .buy-button:hover {
-                transform: translateY(-3px);
-            }
-    
-            .product-image {
-                width: 100%;
-                max-width: 600px;
-                border-radius: 10px;
-                margin: 2rem auto;
-                display: block;
-            }
-    
-            @media (max-width: 768px) {
-                .pros-cons {
-                    grid-template-columns: 1fr;
-                }
-            }
-        </style>
-        <title>Raspberry Pi 5 8GB Review - CyberFeastArcade</title>
-    </head>
+        }
+    </style>
+</head>
+
 <body>
     <header>
         <button class="menu-toggle" aria-label="Mobile menu">
             <span class="hamburger"></span>
         </button>
         
-        <h1 class="site-title">CyberFeastArcade</h1>
-        
+        <a href="index.html" class="logo">
+            <img src="profile.jpg" alt="CyberFeastArcade Logo">
+            <h1 class="site-title">CyberFeastArcade</h1>
+        </a>
+
         <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
            class="youtube-subscribe" 
            target="_blank" 
@@ -149,27 +129,27 @@
            aria-label="Subscribe to our YouTube channel">
             <i class="fab fa-youtube"></i> Subscribe
         </a>
-        
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="videos.html">Videos</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <article class="review-post">
             <div class="review-header">
                 <h1>Raspberry Pi 5 8GB Review: The Ultimate Mini PC?</h1>
-                <div class="product-rating">
+                <div class="product-rating" aria-label="4 out of 5 stars">
                     ★★★★☆
                 </div>
-                <img src="raspberry-pi5-image.jpg" alt="Raspberry Pi 5 8GB" class="product-image">
+                <img src="images/raspberry-pi5.jpg" alt="Raspberry Pi 5 8GB board" class="product-image">
             </div>
 
             <table class="specs-table">
@@ -211,23 +191,36 @@
                 </div>
             </div>
 
-            <h2>Performance Breakdown</h2>
-            <p>The Pi 5's new Broadcom chip delivers desktop-class performance, handling 4K video playback and light gaming with ease. In our benchmarks...</p>
+            <section>
+                <h2>Performance Breakdown</h2>
+                <p>The Pi 5's new Broadcom chip delivers desktop-class performance, handling 4K video playback and light gaming with ease. In our benchmarks...</p>
+            </section>
 
-            <h2>Connectivity & Expansion</h2>
-            <p>With PCIe 2.0 support, you can now add NVMe storage or high-speed network interfaces. The dual HDMI ports make it a great media center candidate...</p>
+            <section>
+                <h2>Connectivity & Expansion</h2>
+                <p>With PCIe 2.0 support, you can now add NVMe storage or high-speed network interfaces. The dual HDMI ports make it a great media center candidate...</p>
+            </section>
 
             <div class="verdict">
                 <h3>Final Verdict</h3>
                 <p>The Raspberry Pi 5 8GB is a massive leap forward, offering near-desktop performance in a credit-card sized package. While it needs careful thermal management, it's the most capable Pi yet for serious projects.</p>
-                <a href="#" class="buy-button">Buy Now ($80)</a>
+                <a href="https://example.com/store/pi5" class="buy-button" target="_blank" rel="noopener">
+                    Buy Now ($80)
+                </a>
             </div>
 
             <div class="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CQmC3AYjFfY" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="400" 
+                        src="https://www.youtube.com/embed/CQmC3AYjFfY" 
+                        title="Raspberry Pi 5 Review Video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
             </div>
         </article>
     </main>
+
     <footer>
         <div class="social-grid">
             <a href="https://www.youtube.com/@CyberFeastArcade" class="social-link" aria-label="Our YouTube channel">
@@ -243,16 +236,19 @@
                 <span>Instagram</span>
             </a>
         </div>
+        
         <div class="legal-links">
             <a href="privacy.html">Privacy Matrix</a>
             <a href="terms.html">Terms Protocol</a>
             <a href="dmca.html">DMCA Firewall</a>
         </div>
+        
         <p class="copyright">© <span id="current-year"></span> CyberFeastArcade</p>
     </footer>
-      <script>
+
+    <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
-      </script>
+    </script>
     <script src="scripts.js" defer></script>
 </body>
 </html>
