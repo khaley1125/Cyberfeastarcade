@@ -210,4 +210,22 @@ main {
     .nav-menu {
         display: flex !important;
     }
+    footer {
+    background: var(--footer-bg);
+    color: var(--text-primary);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-red);
+    text-decoration: underline;
+}
+
 }
