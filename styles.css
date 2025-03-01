@@ -1,3 +1,24 @@
+:root {
+    --primary-red: #ff0000;
+    --text-primary: #ffffff;
+    --background-dark: #121212;
+    --background-light: #ffffff;
+    --border-radius: 8px;
+    --footer-bg: #1a1a1a;
+}
+
+/* Apply dark theme by default */
+body.dark {
+    background: var(--background-dark);
+    color: var(--text-primary);
+}
+
+/* Light theme */
+body.light {
+    background: var(--background-light);
+    color: #000000;
+}
+
 /* ================ */
 /* Header & Navigation - Improved */
 /* ================ */
