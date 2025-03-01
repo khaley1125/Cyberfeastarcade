@@ -144,3 +144,58 @@ header {
 body {
     padding-top: 80px;
 }
+/* Add this after your existing styles */
+main {
+    padding: var(--space-lg) 0;
+}
+
+#hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: var(--border-glowing);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--hacker-green);
+    text-shadow: 0 0 15px var(--hacker-green);
+    margin-bottom: var(--space-md);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-lg);
+}
+
+#highlight {
+    margin: var(--space-lg) 0;
+    text-align: center;
+}
+
+#highlight h2 {
+    margin-bottom: var(--space-md);
+}
+
+.newsletter-container {
+    text-align: center;
+    padding: var(--space-lg);
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    margin: var(--space-lg) auto;
+    max-width: 600px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.newsletter-form input {
+    flex: 1;
+    max-width: 400px;
+}
