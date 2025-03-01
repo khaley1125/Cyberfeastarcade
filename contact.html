@@ -1,28 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TL95KEW8LY');
-        </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TL95KEW8LY');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with CyberFeastArcade for inquiries and collaborations.">
-   <h1><a href="index.html" class="title-link">CyberFeastArcade</a></h1>
+    <meta name="description" content="Contact CyberFeastArcade for collaborations and inquiries">
+    <title>Contact CyberFeastArcade</title>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .contact-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .contact-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ccc;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            background: #2a2a2a;
+            border: 1px solid #3a3a3a;
+            border-radius: 4px;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <button class="menu-toggle" aria-label="Mobile menu">
             <span class="hamburger"></span>
         </button>
         
-        <h1 class="site-title">CyberFeastArcade</h1>
-        
+        <a href="index.html" class="logo">
+            <img src="profile.jpg" alt="CyberFeastArcade Logo">
+            <h1 class="site-title">CyberFeastArcade</h1>
+        </a>
+
         <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
            class="youtube-subscribe" 
            target="_blank" 
@@ -30,7 +94,7 @@
            aria-label="Subscribe to our YouTube channel">
             <i class="fab fa-youtube"></i> Subscribe
         </a>
-        
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -42,30 +106,67 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main class="contact-container">
         <section>
             <h2>Get in Touch</h2>
-            <p>Have questions or want to collaborate? Reach out to us!</p>
-            <p>Email: <a href="mailto:kent@cyberfeastarcade.com">kent@cyberfeastarcade.com</a></p>
-        </section>
-        <section id="contact-methods">
-            <h2>Contact Methods</h2>
-            <div class="contact-options">
-                <a href="mailto:kent@cyberfeastarcade.com" class="contact-link email">
-    <i class="fas fa-envelope"></i> Email Us
-</a>
-                <a href="tel:+1234567890" class="contact-link phone">
-                    <i class="fas fa-phone"></i> Call Us
-                </a>
-                <a href="https://x.com/CyberFeastArc" target="_blank" class="contact-link twitter">
-                    <i class="fab fa-x-twitter"></i> Message on X/Twitter
-                </a>
-                <a href="https://www.instagram.com/cyberfeastarcade/" target="_blank" class="contact-link instagram">
-                    <i class="fab fa-instagram"></i> DM on Instagram
-                </a>
+            <p>Have questions or want to collaborate? Reach out through any of these channels:</p>
+            
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:kent@cyberfeastarcade.com" class="contact-link">
+                        kent@cyberfeastarcade.com
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:+15551234567" class="contact-link">
+                        +1 (555) 123-4567
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-comments contact-icon"></i>
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://x.com/CyberFeastArc" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cyberfeastarcade/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="/contact" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-red">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <div class="social-grid">
             <a href="https://www.youtube.com/@CyberFeastArcade" class="social-link" aria-label="Our YouTube channel">
@@ -90,11 +191,11 @@
         
         <p class="copyright">© <span id="current-year"></span> CyberFeastArcade</p>
     </footer>
-    
-    <script src="scripts.js" defer></script>
+
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
 
