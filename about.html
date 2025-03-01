@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL95KEW8LY"></script>
     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TL95KEW8LY');
-        </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TL95KEW8LY');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about CyberFeastArcade and our mission in gaming and tech.">
-    <h1><a href="index.html" class="title-link">CyberFeastArcade</a></h1>
+    <meta name="description" content="Learn about CyberFeastArcade's mission, team, and journey in gaming and tech">
+    <title>About CyberFeastArcade</title>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .about-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .team-member {
+            background: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .team-icon {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .history-timeline {
+            border-left: 3px solid #4CAF50;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -2.35rem;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: #4CAF50;
+            border-radius: 50%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <button class="menu-toggle" aria-label="Mobile menu">
-        <span class="hamburger"></span>
+            <span class="hamburger"></span>
         </button>
         
-        <h1 class="site-title">CyberFeastArcade</h1>
-        
+        <a href="index.html" class="logo">
+            <img src="profile.jpg" alt="CyberFeastArcade Logo">
+            <h1 class="site-title">CyberFeastArcade</h1>
+        </a>
+
         <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
            class="youtube-subscribe" 
            target="_blank" 
@@ -29,7 +87,7 @@
            aria-label="Subscribe to our YouTube channel">
             <i class="fab fa-youtube"></i> Subscribe
         </a>
-        
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -41,32 +99,65 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="about">
+        <section class="about-section">
             <h2>Our Mission</h2>
-            <p>CyberFeastArcade is dedicated to bringing the latest in gaming, tech, and entertainment. We aim to create a community for enthusiasts who love to explore and discuss all things digital.</p>
+            <p>CyberFeastArcade is dedicated to bringing the latest in gaming, tech, and digital culture. We aim to create a vibrant community for enthusiasts who love to explore and discuss cutting-edge technology and interactive entertainment.</p>
         </section>
-        
-        <section id="team">
+
+        <section class="about-section" id="team">
             <h2>Meet the Team</h2>
-            <p>CyberFeastArcade is powered by passionate gamers, tech enthusiasts, and creators who live and breathe digital entertainment.</p>
-            <ul>
-                <li><strong>Founder & Host:</strong> Dedicated to delivering the best content on gaming and technology.</li>
-                <li><strong>Video Editor:</strong> The magic behind the seamless visuals and production.</li>
-                <li><strong>Community Manager:</strong> Engages with the audience and fosters a great gaming community.</li>
-            </ul>
+            <div class="team-list">
+                <div class="team-member">
+                    <i class="fas fa-user-secret team-icon"></i>
+                    <h3>Founder & Host</h3>
+                    <p>Kent Haley - Tech evangelist and content creator focused on delivering authentic tech insights</p>
+                </div>
+                
+                <div class="team-member">
+                    <i class="fas fa-video team-icon"></i>
+                    <h3>Production Lead</h3>
+                    <p>Alex Morgan - Oversees video production and technical execution</p>
+                </div>
+                
+                <div class="team-member">
+                    <i class="fas fa-users team-icon"></i>
+                    <h3>Community Manager</h3>
+                    <p>Jordan Smith - Builds and engages our growing community</p>
+                </div>
+            </div>
         </section>
-        
-        <section id="history">
+
+        <section class="about-section" id="history">
             <h2>Our Journey</h2>
-            <p>CyberFeastArcade started as a small passion project and has grown into a full-fledged platform for gamers and tech lovers. Our goal is to provide high-quality content, unbiased reviews, and in-depth gaming experiences.</p>
+            <div class="history-timeline">
+                <div class="timeline-item">
+                    <h3>2022: Foundation</h3>
+                    <p>Started as a passion project sharing tech reviews on YouTube</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2023: First Milestone</h3>
+                    <p>Reached 10k subscribers and launched our website</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024: Expansion</h3>
+                    <p>Introduced blog content and community forums</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2025: Current Focus</h3>
+                    <p>Developing original content series and expanding tech coverage</p>
+                </div>
+            </div>
         </section>
-        
-        <section id="join-us">
-            <h2>Join Us</h2>
-            <p>Are you passionate about gaming and tech? Want to collaborate or contribute? Contact us and be a part of the CyberFeastArcade journey!</p>
+
+        <section class="about-section" id="join">
+            <h2>Join the Movement</h2>
+            <p>Want to collaborate or contribute? We're always looking for passionate individuals to join our team or community initiatives.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
         </section>
     </main>
+
     <footer>
         <div class="social-grid">
             <a href="https://www.youtube.com/@CyberFeastArcade" class="social-link" aria-label="Our YouTube channel">
@@ -91,10 +182,10 @@
         
         <p class="copyright">© <span id="current-year"></span> CyberFeastArcade</p>
     </footer>
-    
-    <script src="scripts.js" defer></script>
+
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
