@@ -62,12 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(themeToggle);
 
     const savedTheme = localStorage.getItem('theme') || 'dark';
-    body.classList.add(savedTheme);
+    body.setAttribute('data-theme', savedTheme);
 
     themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark');
-        body.classList.toggle('light');
-        localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
     });
 
     // Dynamic Copyright Year
@@ -148,19 +149,3 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         }
     });
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const body = document.body;
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    body.classList.add(savedTheme);
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
-
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener("click", function () {
-            navMenu.classList.toggle("active");
-        });
-    }
-});
