@@ -34,6 +34,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     height: var(--header-height);
+    width: 100%; /* Ensure full width */
 }
 
 .header-container {
@@ -44,6 +45,7 @@ header {
     align-items: center;
     padding: 0 1rem;
     position: relative;
+    width: 100%; /* Ensure full width */
 }
 
 .logo-container {
@@ -70,6 +72,7 @@ header {
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    background: #121212; /* Added background to nav menu */
 }
 
 .nav-menu ul {
@@ -228,32 +231,4 @@ footer a:hover {
     .nav-menu {
         display: flex;
     }
-}
-.nav-menu {
-    display: flex;
-    background: #121212;
-}
-header {
-    background: var(--header-bg);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    height: var(--header-height);
-    /* Add this line to ensure the background extends fully */
-    width: 100%;
-}
-
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    position: relative;
-    /* add this line to ensure the background extends fully */
-    width: 100%;
 }
