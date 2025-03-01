@@ -10,6 +10,11 @@
     --header-height: 80px;
 }
 
+body {
+    background: var(--background-dark);
+    color: var(--text-primary);
+}
+
 body[data-theme="dark"] {
     background: var(--background-dark);
     color: var(--text-primary);
