@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-menu a');
 
+    const updateActiveLink = (targetLink) => {
+        navLinks.forEach(link => link.classList.remove('active'));
+        if (targetLink) {
+            targetLink.classList.add('active');
+        }
+    };
+
     document.addEventListener('click', (e) => {
         const targetLink = e.target.closest('a[href^="#"]');
         if (targetLink) {
@@ -37,8 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: target.offsetTop - header.offsetHeight,
                     behavior: 'smooth'
                 });
-                navLinks.forEach(link => link.classList.remove('active'));
-                targetLink.classList.add('active');
+                updateActiveLink(targetLink);
             }
         }
     });
@@ -46,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                navLinks.forEach(link => link.classList.remove('active'));
-                document.querySelector(`.nav-menu a[href="#${entry.target.id}"]`)?.classList.add('active');
+                const targetLink = document.querySelector(`.nav-menu a[href="#${entry.target.id}"]`);
+                updateActiveLink(targetLink);
             }
         });
     }, { threshold: 0.5 });
@@ -149,3 +155,4 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         }
     });
+});
