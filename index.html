@@ -45,69 +45,91 @@
 
 <body>
     <header>
-    <div class="header-container">
-        <!-- Mobile Menu Toggle -->
-        <button class="menu-toggle" aria-label="Mobile menu">
-            <span class="hamburger"></span>
-        </button>
+        <div class="header-container">
+            <button class="menu-toggle" aria-label="Mobile menu">
+                <span class="hamburger"></span>
+            </button>
 
-        <!-- Logo & Site Title -->
-        <div class="logo-container">
-            <a href="index.html" class="logo">
-                <img src="profile.jpg" alt="CyberFeastArcade Logo">
-                <h1 class="site-title">CyberFeastArcade</h1>
-            </a>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="profile.jpg" alt="CyberFeastArcade Logo">
+                    <h1 class="site-title">CyberFeastArcade</h1>
+                </a>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="videos.html" class="nav-link">Videos</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
+                   class="youtube-subscribe" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Subscribe to our YouTube channel">
+                    <i class="fab fa-youtube"></i> Subscribe
+                </a>
+            </div>
         </div>
+    </header>
 
-        <!-- Navigation Menu -->
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="videos.html" class="nav-link">Videos</a></li>
-                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-            </ul>
-        </nav>
-
-        <!-- YouTube Subscribe Button -->
-        <div class="header-actions">
-            <a href="https://www.youtube.com/@CyberFeastArcade?sub_confirmation=1" 
-               class="youtube-subscribe" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               aria-label="Subscribe to our YouTube channel">
-                <i class="fab fa-youtube"></i> Subscribe
-            </a>
-        </div>
-    </div>
-</header>
-
-    <main>
-        <form action="/search" method="GET">
-            <input type="text" name="q" placeholder="Search..." aria-label="Search">
-            <button type="submit">Search</button>
-        </form>
-
-        <section id="hero">
+    <main class="container">
+        <section id="hero" class="fade-in">
             <div class="hero-content">
-                <h2>Enter the CyberFeast</h2>
-                <p>Next-level gaming tech analysis & entertainment</p>
-                <a href="#featured" class="btn btn-red">Watch Latest</a>
+                <h1>Enter the CyberFeast</h1>
+                <p>Next-level gaming tech analysis & digital innovation</p>
+                <a href="#featured" class="btn btn-red">Explore Latest</a>
             </div>
         </section>
 
-        <section id="featured" class="card-grid">
-            <!-- Feature cards remain unchanged -->
+        <section id="featured" class="card-grid fade-in">
+            <article class="card">
+                <i class="fas fa-microchip"></i>
+                <h2>Hardware Reviews</h2>
+                <p>Cutting-edge analysis of gaming gear and tech components</p>
+                <a href="reviews.html" class="btn">Read More</a>
+            </article>
+
+            <article class="card">
+                <i class="fas fa-robot"></i>
+                <h2>AI Insights</h2>
+                <p>Practical guides to automate and enhance your workflow</p>
+                <a href="blog.html" class="btn">Explore AI</a>
+            </article>
+
+            <article class="card">
+                <i class="fas fa-video"></i>
+                <h2>Latest Videos</h2>
+                <p>In-depth tech reviews and gaming content</p>
+                <a href="videos.html" class="btn">Watch Now</a>
+            </article>
         </section>
 
-        <section id="highlight" class="video-highlight">
-            <!-- Video highlight section -->
+        <section id="highlight" class="fade-in">
+            <h2>Featured Tech Review</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/CQmC3AYjFfY" 
+                        title="Raspberry Pi 5 Review" 
+                        allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
-        <section id="newsletter">
-            <!-- Newsletter form -->
+        <section id="newsletter" class="fade-in">
+            <div class="newsletter-container">
+                <h2>Join the Circuit</h2>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your neural interface ID" required>
+                    <button type="submit" class="btn btn-red">Subscribe</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -137,7 +159,6 @@
     </footer>
 
     <script>
-        // Single copyright year script
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
     <script src="scripts.js" defer></script>
