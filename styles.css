@@ -199,3 +199,10 @@ main {
     flex: 1;
     max-width: 400px;
 }
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: block;
+}
