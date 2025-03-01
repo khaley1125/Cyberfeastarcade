@@ -149,3 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    body.classList.add(savedTheme);
+});
